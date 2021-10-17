@@ -1,6 +1,41 @@
 /* Small tablet styles */
 
-@media only screen and (min-width: 620px) {}
+@media only screen and (min-width: 620px) {
+    .welcome-text {
+        grid-column: 1/5;
+    }
+    .welcome-img {
+        grid-column: 5/9;
+        & img {
+            width: 100%;
+        }
+    }
+    .projects {
+        margin-top: 40px;
+        a {
+            grid-column: span 4;
+            display: block;
+            margin: 20px 0;
+            &:last-child {
+                grid-column: 3/7;
+            }
+            & * {
+                margin: 10px;
+                max-width: 60%;
+                margin: 10px 20%;
+            }
+        }
+        h4 {
+            text-align: center;
+        }
+    }
+    #skills {
+        padding: 30px 100px;
+    }
+    footer {
+        background-size: 20%;
+    }
+}
 
 
 /* lLarge tablets & Laptop styles */
